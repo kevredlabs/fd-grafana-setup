@@ -81,8 +81,8 @@ docker compose up -d
 ```
 
 Access:
-- Prometheus: http://localhost:9090
-- Grafana: http://localhost:3000 (admin / admin)
+- Prometheus: http://SERVER_IP:9090
+- Grafana: http://SERVER_IP:3000 (admin / admin)
 
 **Note**: Prometheus is automatically configured as the default datasource in Grafana, and official Firedancer dashboards are automatically provisioned.
 
@@ -106,16 +106,6 @@ These dashboards are sourced from the [official Firedancer repository](https://g
 - If your Firedancer exposes on another port, update `prometheus.yml` and firewall rules.
 - Prometheus datasource is automatically configured in Grafana via provisioning.
 - Official Firedancer dashboards are automatically provisioned and ready to use.
+- Replace `SERVER_IP` with your actual server IP address for remote access.
 
 ---
-
-## ✅ TODO (optional improvements)
-- Set up alerting for leader performance/backpressure
-- Secure Grafana with basic auth or OAuth
-- Add custom dashboards for specific use cases
-
----
-
-## 📞 Questions
-
-Feel free to open an issue or ping me if you need help adapting this to a specific deployment.
